@@ -1,6 +1,8 @@
  // Initialising the variables
 let computerGeneratedInput, userInput, computernNormalisation, userNormalisation  = 0;
-let playerScore, computerScore, counter = 0;
+let counter = 0;
+let playerScore = 0;
+let computerScore = 0;
 
 // Round - 1
 // Generating a random between 1 and 3;
@@ -29,12 +31,12 @@ if(computerInputLength == userInputLength) {
     console.log("Tie");
 } 
 else if(computerInputLength == 4 && userInputLength == 5 || computerInputLength == 5 && userInputLength == 8 || computerInputLength == 8 && userInputLength == 4) {
-    playerScore += 1;
+    playerScore = playerScore + 1;
     console.log(`Player Wins, Score = ${playerScore}`);
     
 }
 else {
-    computerScore += 1;
+    computerScore = computerScore + 1;
     console.log(`Computer Wins, Score = ${computerScore}`);
     
 }
